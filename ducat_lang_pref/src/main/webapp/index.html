@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html >
+<head>
+  
+    <title>form data to database</title>
+ <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+    
+   
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form action="senddata" method="post">
+        <h3>enter data Here</h3>
+
+        <label for="username">Name</label>
+        <input type="text" placeholder="name" name="username">
+        <label for="gender">gender</label>
+       
+        <input type="radio" value="male" name="gender"> male
+        <input type="radio" value="female" name="gender">female
+        
+        
+           <label for="emailid" >email id</label>
+        <input type="email" placeholder="email" name="email">
+        <label for="course" >course</label>
+         <select name="course">
+        <option value="java" > java
+        <option value="python" >python	
+        <option value="datascience" >data science
+        
+        </select>
+         <label for="language">language preferance</label>
+         <select name="language">
+        <option value="hindi" > hindi
+        <option value="english" >english	
+        <option value=both" >both
+        
+        </select>
+        
+
+       <label for="password" >password</label>
+        <input type="password" placeholder="password" name="password">
+
+        <button>send data <button>
+      
+    </form>
+</body>
+</html>
